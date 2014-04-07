@@ -1,0 +1,26 @@
+.cssClass {
+    background-color: var(mainColor);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    behaviour: url('/assets/web/images/border-radius.htc');
+}
+.cssClass ul li a {
+    display: block;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(light);
+    padding-top: 15px;
+}
+.cssClass ul.menu li.current a {
+    color: var(light);
+    background-color: var(mainColorLight);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    behaviour: url('/assets/web/images/border-radius.htc');
+}
