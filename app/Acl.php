@@ -5,19 +5,12 @@ class Acl extends Kwf_Acl_Component
     {
         parent::__construct();
 
-        $this->add(new Kwf_Acl_Resource_MenuUrl('kwf_user_users',
-                array('text'=>trlKwf('Useradministration'), 'icon'=>'user.png'),
-                '/kwf/user/users'));
-            $this->add(new Zend_Acl_Resource('kwf_user_user'), 'kwf_user_users');
-            $this->add(new Zend_Acl_Resource('kwf_user_log'), 'kwf_user_users');
-            $this->add(new Zend_Acl_Resource('kwf_user_comments'), 'kwf_user_users');
-
 	$this->add(new Kwf_Acl_Resource_MenuUrl('abc_abc-parent', array('text'=>'DEMO', 'icon'=>'user.png'), '/admin/abc/abc-parent'));
             $this->add(new Zend_Acl_Resource('abc_abc'), 'abc_abc-parent');
             $this->add(new Zend_Acl_Resource('abc_abc-form'), 'abc_abc-parent');
         $this->allow('admin', 'abc_abc-parent');
 
-        $this->addRole(new Kwf_Acl_Role('myrole', trl('My Role')));
+        $this->addRole(new Kwf_Acl_Role('myrole', trlStatic('My Role')));
         $this->add(new Kwf_Acl_Resource_EditRole('edit_role_myrole', 'myrole'), 'edit_role');
         $this->allow('admin', 'edit_role_myrole');
 	$this->allow('admin', 'abc_abc-parent');
