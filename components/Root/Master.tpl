@@ -8,7 +8,7 @@
         <div id="page">
             <div id="outerHeader">
                 <div id="header">
-                    Alpaka - Kune Kune
+                    Alpaka
                 </div>
             </div>
             <div id="outerContent">
