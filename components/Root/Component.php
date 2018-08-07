@@ -13,13 +13,6 @@ class Root_Component extends Kwc_Root_Component
 
         $ret['editComponents'] = array('title', 'metaTags');
 
-        $ret['generators']['googledrive'] = array(
-            'class' => 'Kwf_Component_Generator_Page_Static',
-            'component' => 'GoogleDrive_Component',
-            'filename' => 'googledriveopenurl',
-            'name' => trl('GoogleDrive')
-        );
-
         $ret['contentWidth'] = 780;
         $ret['contentWidthBoxSubtract'] = array(
             'mainMenu' => 205,
