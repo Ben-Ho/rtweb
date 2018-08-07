@@ -1,0 +1,32 @@
+@import "config/colors";
+.kwcClass .kwfTabsLinks .kwfTabsLink { padding: 0px; background: none; border: none; }
+.kwcClass .kwfTabsLinks .kwfTabsLink .beforeTab,
+.kwcClass .kwfTabsLinks .kwfTabsLink .tab,
+.kwcClass .kwfTabsLinks .kwfTabsLink .afterTab {
+    float: left;
+    width: 5px;
+    height: 21px;
+    font-weight: bold;
+    margin-bottom: -4px;
+    color: $light;
+    background: url('~web/images/tabsLinkLeftBg.png') no-repeat top right;
+    cursor: pointer;
+}
+.kwcClass .kwfTabsLinks .kwfTabsLink .tab {
+    width: auto;
+    padding: 4px 4px 0px 4px;
+    background: url('~web/images/tabsLinkCenterBg.png') repeat-x top left;
+}
+.kwcClass .kwfTabsLinks .kwfTabsLink .afterTab {
+    background: url('~web/images/tabsLinkRightBg.png') no-repeat top left;
+}
+.kwcClass .kwfTabsLinks .kwfTabsLinkActive .beforeTab {
+    background: url('~web/images/tabsLinkLeftActiveBg.png') no-repeat top right;
+}
+.kwcClass .kwfTabsLinks .kwfTabsLinkActive .tab {
+    background: url('~web/images/tabsLinkCenterActiveBg.png') repeat-x top left;
+}
+.kwcClass .kwfTabsLinks .kwfTabsLinkActive .afterTab {
+    background: url('~web/images/tabsLinkRightActiveBg.png') no-repeat top left;
+}
+.kwcClass .kwfTabsContent { border-color: $mainColor; }

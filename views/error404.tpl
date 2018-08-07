@@ -10,19 +10,19 @@
         <div id="page">
             <div id="outerHeader">
                 <div id="header">
-                    <div class="left" id="logo">
+                    <div class="kwfUp-left" id="logo">
                         <a href="/">
                             <img src="/assets/web/images/logo.jpg" alt="RegioTool" />
                         </a>
                     </div>
-                    <div class="right" id="login">&nbsp;</div>
-                    <div class="clear"></div>
+                    <div class="kwfUp-right" id="login">&nbsp;</div>
+                    <div class="kwfUp-clear"></div>
                     <div id="mainMenu">&nbsp;</div>
                 </div>
             </div>
             <div id="outerContent">
                 <div id="content">
-                    <div class="webStandard" id="innerContent">
+                    <div class="kwfUp-webStandard" id="innerContent">
                         <p><strong><?=$this->data->trlKwf('Errormessage');?></strong></p>
                         <h2>404 - <?=$this->data->trlKwf('File not found');?></h2>
                         <p><?=$this->data->trlKwf('The requested URL "{0}" was not found on this server.', $this->requestUri);?></p>

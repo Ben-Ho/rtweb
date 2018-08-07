@@ -1,0 +1,10 @@
+@import "config/colors";
+.kwcClass ul { margin-bottom: 10px !important; }
+.kwcClass li { display: inline; }
+.kwcClass li a {
+    font-weight: bold;
+    color: $darkGray;
+    padding: 0px 10px;
+}
+.kwcClass li a:hover,
+.kwcClass li.current a { color: $mainColor; }

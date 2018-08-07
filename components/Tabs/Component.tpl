@@ -1,5 +1,5 @@
-<div class="<?=$this->cssClass;?> kwfTabs">
-    <?
+<div class="<?=$this->rootElementClass?> kwfTabs">
+    <?php 
     $i = 0;
     foreach ($this->listItems as $child) {
         $class = 'listItem ';
@@ -12,16 +12,16 @@
         }
         $class = trim($class);
         ?>
-        <div class="<?=$class;?> kwfTabsLink <? if ($i == 0) echo 'kwfTabsLinkActive'; ?>">
+        <div class="<?=$class;?> kwfTabsLink <?php  if ($i == 0) echo 'kwfTabsLinkActive'; ?>">
             <div class="beforeTab"></div>
             <div class="tab"><?=$child['title'];?></div>
             <div class="afterTab"></div>
-            <div class="clear"></div>
+            <div class="kwfUp-clear"></div>
         </div>
-        <div class="<?=$class;?> kwfTabsContent <? if ($i == 0) echo 'kwfTabsContentActive'; ?>">
+        <div class="<?=$class;?> kwfTabsContent <?php  if ($i == 0) echo 'kwfTabsContentActive'; ?>">
             <?=$this->component($child['data']);?>
         </div>
-        <?
+        <?php 
         $i++;
     } ?>
 </div>

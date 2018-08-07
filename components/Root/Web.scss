@@ -1,0 +1,127 @@
+@import "form/default-styles";
+@import "config/colors";
+.kwfUp-webStandard { font-family: Arial, Helvetica, Verdana, Geneva, sans-serif; font-size: 12px; color: $typo; }
+.kwfUp-webStandard strong { font-weight: bold; }
+.kwfUp-webStandard em { font-style: italic; }
+
+.kwfUp-webStandard p { line-height: 18px; color: $typo; margin-bottom: 10px; }
+.kwfUp-webStandard p::selection {
+    background: $mainColorLight;
+}
+.kwfUp-webStandard p::-moz-selection {
+    background: $mainColorLight;
+}
+
+.kwfUp-webStandard h1 { font-size: 25px; margin-bottom: 10px; color: $mainColor; } /* Überschrift 1 */
+.kwfUp-webStandard h2 { font-size: 20px; margin-bottom: 10px; color: $mainColor; } /* Überschrift 2 */
+.kwfUp-webStandard h3 { font-size: 12px; margin-bottom: 5px; } /* Überschrift 3 */
+
+.kwfUp-webStandard a { text-decoration: none; color: $mainColor; outline: none; }
+.kwfUp-webStandard a:hover { text-decoration: none; color: $secColor; }
+.kwfUp-webStandard a:link { text-decoration: none; }
+
+.kwfUp-webStandard ol,
+.kwfUp-webStandard ul { margin-bottom: 10px; margin-left: 20px; }
+.kwfUp-webStandard li { list-style-type: square; margin-bottom: 5px; line-height: 18px; color: $typo; }
+
+
+body.ext2-ie6 { text-align: center; }
+
+#page {
+    padding-top: 50px;
+}
+
+#page #outerContent #mainMenu {
+	float: left;
+	width: 180px;
+	margin-right: 25px;
+}
+
+#page #outerHeader #header,
+#page #outerContent #content,
+#page #outerFooter #footer { width: 780px; margin: 0px auto; text-align: left; }
+
+#page #outerHeader #header {
+    background-color: $mainColor;
+    height: 50px;
+    font-size: 35px;
+    padding-top: 7px;
+    font-family: 'IM Fell English', serif;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#page #outerContent #content { padding: 35px 0px 25px 0px; }
+#page #outerContent #content #innerContent { width: 780px; }
+#page #outerContent #content .withSub { width: 575px !important; }
+
+#page #outerFooter { repeat-x: top left; }
+#page #outerFooter #footer { padding: 15px; height: 60px; position: relative; }
+#page #outerFooter #footer p { margin-bottom: 0px; color: $darkGray; }
+#page #outerFooter #footer .menu { position: absolute; width: 780px; top: 10px; }
+#page #outerFooter #footer .based {
+    position: absolute; right: 0; width: 400px; font-weight: bold;
+}
+
+.kwfUp-webListNone ul { margin: 0px; }
+.kwfUp-webListNone,
+.kwfUp-webListNone li { margin-bottom: 0px; }
+
+.kwfUp-webForm input,
+.kwfUp-webForm textarea,
+.kwfUp-webForm label,
+.kwfUp-webForm button,
+.kwfUp-webForm select {
+    font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: $typo;
+    line-height: 18px;
+}
+
+.kwfUp-webForm label { text-align: left; }
+.kwfUp-webForm .submitWrapper { margin: 10px 0px 10px 140px; }
+.kwfUp-webForm button { color: $light; background: none !important; border: none !important; }
+.kwfUp-webForm button:hover { color: $mainColor; }
+
+.kwfUp-webForm .beforeButton,
+.kwfUp-webForm .afterButton {
+    display: block;
+    float: left;
+    width: 4px;
+    height: 27px;
+    background: url('~web/images/webFormButtonLeft.png') no-repeat top right;
+}
+.kwfUp-webForm .button {
+    float: left;
+    height: 27px;
+    background: url('~web/images/webFormButtonCenter.png') repeat-x top left;
+}
+.kwfUp-webForm .afterButton {
+    background: url('~web/images/webFormButtonRight.png') no-repeat top left;
+}
+
+.kwfUp-webForm {
+    @include form-default-styles;
+}
+
+
+// Missing after kwf-update from 3.7
+.kwfUp-webListNone li {
+    list-style-type: none !important;
+    list-style-image: none !important;
+}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+.kwfUp-left {
+    float: left;
+}
+.kwfUp-clear {
+    height: 0px;
+    clear: both;
+}

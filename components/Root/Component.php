@@ -1,9 +1,9 @@
 <?php
 class Root_Component extends Kwc_Root_Component
 {
-    public static function getSettings()
+    public static function getSettings($param = null)
     {
-        $ret = parent::getSettings();
+        $ret = parent::getSettings($param);
 
         $ret['generators']['box']['component']['mainMenu'] = 'Menu_Main_Component';
         $ret['generators']['box']['component']['bottomMenu'] = 'Menu_Bottom_Component';
