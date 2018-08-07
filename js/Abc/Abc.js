@@ -1,5 +1,5 @@
-Ext.ns('Abc');
-Abc.Abc = Ext.extend(Ext.Panel, {
+Ext2.ns('Abc');
+Abc.Abc = Ext2.extend(Ext2.Panel, {
     initComponent: function(config)
     {
         var abc = new Kwf.Auto.GridPanel({
@@ -27,4 +27,4 @@ Abc.Abc = Ext.extend(Ext.Panel, {
         Abc.Abc.superclass.initComponent.call(this);
     }
 });
-Ext.reg('abc.abc', Abc.Abc);
+Ext2.reg('abc.abc', Abc.Abc);

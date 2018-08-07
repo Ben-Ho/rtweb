@@ -23,7 +23,7 @@
 .webStandard li { list-style-type: square; margin-bottom: 5px; line-height: 18px; color: var(typo); }
 
 
-body.ext-ie6 { text-align: center; }
+body.ext2-ie6 { text-align: center; }
 
 #page {
     padding-top: 50px;
